@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,800;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+}
+
+.container{
+
+    height: auto;
+    width: 24rem;
+
+    background-color: white;
+    font-family: 'Figtree';
+    font-size: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  
+    max-width: 450px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-color:  hsl(0, 0%, 7%);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 1.25rem;
+    box-shadow: 8px 8px;
+}
+
+.svg {
+    align-self: stretch;
+    border-radius:0.625rem;
+    margin: 1.5rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    gap: 0.75rem;
+}
+
+.content h1{
+    font-size:24px;
+    font-weight: 800;
+}
+
+.content a{
+    text-decoration: none;
+    color:black;
+}
+
+.content a:hover{
+    color:hsl(47, 88%, 63%);
+}
+
+.content p{
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(0, 0%, 50%);
+}
+
+.content small {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.content button, h2{
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.content button{
+    border-style: none;
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.75rem;
+}
+
+.avatar{
+    width:2rem;
+    height:2rem;
+    margin-right: 12px;
+}
+
+.person {
+    margin-top:24px;
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+@media only screen and (max-width: 425px) {
+
+    .container {
+        height: 501px;
+        width: 90%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+}
